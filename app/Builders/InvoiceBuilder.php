@@ -1,7 +1,8 @@
 <?php
 require_once __DIR__ . '/../Models/Invoice.php';
+require_once __DIR__ . '/InvoiceBuilderInterface.php';
 
-class InvoiceBuilder
+class InvoiceBuilder implements InvoiceBuilderInterface
 {
     private $invoice;
 
